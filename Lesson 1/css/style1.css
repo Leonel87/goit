@@ -1,0 +1,29 @@
+body { text-align: center;
+		background-color: #f2f0e3;
+}
+
+.page { width: 800px;
+	margin: 5px auto 10px;
+	border: 1px solid gray;
+	box-shadow: 0 0 10px;
+}
+.line { border: none;
+	background-color: gray;
+    color: none; 
+    height: 1px; 
+    width: 750px;
+    margin-left: 20px;   
+}
+ul { margin-left: 15px; 
+	text-align: justify;
+    
+}
+li { margin-left: 16px;
+	text-align: justify;
+	margin-top: 5px;
+}
+p { margin-left: 7% ;
+ 	text-align: justify;
+ 	margin-top: 5px;
+ 	margin-bottom: 10px;
+ 	 }
