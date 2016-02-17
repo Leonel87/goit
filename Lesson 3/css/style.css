@@ -17,17 +17,22 @@ header img {
 	padding-bottom: 40px;
 	display: block; 
 }
+.header-nav a:hover {
+	background-color: #3e3e3e;
+}
 .header-nav {
 	display: block;
 	background-color: #484747;
-	height: 40px;
 	margin-bottom: 40px;
+	height: 40px;
 }
 nav a {
 	text-decoration: none;
 	color: #e3e3e3;
 	font-family:  myriad;
 	font-size: 18px;
+	padding: 0px 0px 0px 0px;
+	display: block;
 }
 nav li {
 	float: left;
@@ -48,18 +53,33 @@ nav li {
 .sidebar ul {
 	padding: 0px;
 }
+.sidebar a {
+	padding: 0px;
+	text-decoration: none;
+	color: #2c2c2c;
+}
 ul {
 	list-style-type: none;
 	margin: 0px; 
 }
 .content { 
-	padding-left: 289px; 
+	padding-left: 289px;
+}
+.imgwrap img { 
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+}
+.imgwrap {
+	border:  1px solid gray;
+	text-align: center;
 }
 p {
 	padding: 40px 0 60px 0;
 }
 .footer {
 	background-color: #e1e1e1;
+	height: 40px;
 }
 footer a {
 	float: left;
@@ -68,8 +88,9 @@ footer a {
 	padding: 9px 1px;
 	text-align: center;
 	text-decoration: none;
+	color: #2c2c2c;
 }	
-footer li:last-child {
+footer p {
 	float: right;
 	width: auto;
 	padding-right: 15px;

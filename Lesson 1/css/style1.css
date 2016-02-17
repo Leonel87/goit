@@ -1,29 +1,45 @@
-body { text-align: center;
-		background-color: #f2f0e3;
+body { 
+	margin: 0;
+	padding: 0;
 }
-
-.page { width: 800px;
+.page { 
+	width: 800px;
 	margin: 5px auto 10px;
 	border: 1px solid gray;
 	box-shadow: 0 0 10px;
+	padding: 10px 20px;
+	text-align: center;
 }
-.line { border: none;
-	background-color: gray;
-    color: none; 
-    height: 1px; 
-    width: 750px;
-    margin-left: 20px;   
+.header, .conteiner{
+	width: 700px;
+	margin: 0 auto;
+	text-align: center;
 }
-ul { margin-left: 15px; 
+.conteiner{
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid gray;
+	text-align: left;
+}	
+ul { 
+	padding-left: 15px; 
 	text-align: justify;
-    
 }
-li { margin-left: 16px;
+li { 
+	padding-left: 18;
 	text-align: justify;
 	margin-top: 5px;
 }
-p { margin-left: 7% ;
+.link a {
+	width: auto;
+	height: auto;
+	padding-left: 16px;
+}
+.list p { 
+	padding-left: 16px;
  	text-align: justify;
  	margin-top: 5px;
  	margin-bottom: 10px;
- 	 }
+}
+
+
