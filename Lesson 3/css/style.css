@@ -31,7 +31,7 @@ nav a {
 	color: #e3e3e3;
 	font-family:  myriad;
 	font-size: 18px;
-	padding: 0px 0px 0px 0px;
+	padding: 0px;
 	display: block;
 }
 nav li {
@@ -95,6 +95,9 @@ footer p {
 	width: auto;
 	padding-right: 15px;
 	padding-top: 9px;
+}
+footer li a {
+	text-decoration: underline;
 }
 footer:after {
 	content: "";
