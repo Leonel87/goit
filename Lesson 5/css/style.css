@@ -1,0 +1,81 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+	font: Tahoma, Verdana, sans-serif;
+	background:  rgb(18,138,167);
+	margin: 0;
+	padding: 0;
+}
+.clearfix:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+* {
+ margin: 0px;
+ padding: 0px;
+ list-style: none;
+ text-decoration: none;
+}
+
+li {
+ padding: 15px 0px;
+}
+
+a {
+ padding: 15px 5px;
+}
+.header:before {
+	content: '';
+	display: block;
+	height: 38px;
+	width: 100%;
+	background: #085393;
+	position: absolute;
+}
+header p {
+ padding: 11px 5px 11px;
+ background: #4eabda;
+}
+
+header p a {
+ text-decoration: underline;
+}
+
+header {
+ padding: 0px 5px 11px;
+ height: 30px;
+ width: 100%;
+ min-width: 850px;
+ width: auto;
+ background-image: url("../img/headline.jpg");
+ background-repeat: repeat;
+}
+
+header li, header ul, header p {
+ display: inline-block;
+}
+
+ header p, header ul {
+ float: right;
+}
+fheader li:last-child {
+ background: url(../img/banner.jpg) no-repeat;
+ background-position: left;
+ padding-left: 25px;
+ border-left: 1px solid white;
+}
+
+header li a:hover {
+ background: rgb(65,150,210);
+ padding: 12px 5px 11px 5px;
+ }
+
+/*html {
+	background-image: url(../img/homework4.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	opacity: 0.5;
+}*/
