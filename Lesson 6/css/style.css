@@ -1,0 +1,100 @@
+* {
+ 	margin: 0px;
+ 	padding: 0px;
+ }
+html,body {
+    height: 100%;
+    margin: 0;
+	font-family: Arial,sent-serif;
+}
+.clearfix:after {
+    content: " ";
+    clear: both;
+    display: block;
+}
+.wrapper {
+    display: table;
+    overflow: hidden;
+    table-layout: fixed;
+    min-width: 1000px;
+    height: 100%;
+	width: 100%;
+}
+.w1 {
+    display: table-row;
+    height: 100%;
+}
+.container {
+	width: 910px;
+    padding: 0 45px;
+    margin: 0 auto;
+}
+.contact {
+    background: url('../img/phone.jpg') no-repeat;
+    background-position: left;
+    margin: 22px -18px;
+    padding-left: 25px;
+}
+.contact a {
+    text-decoration: none;
+    font-size: 19px;
+    color: #5e696d;
+}
+.entry {
+    position: relative;
+    top: -4px;
+    border-radius: 3px;
+    padding: 5px;
+    background: linear-gradient(to bottom, rgb(31,103,135),rgb(12,51,87));
+}
+
+.entry form {
+    background: url('../img/login-icon.jpg') no-repeat;
+    background-position: left;  
+    padding-left: 28px;
+}
+
+.entry input {
+    position: relative;
+    top: -1px;
+    font-size: 11px;
+    width: 115px;
+}
+
+.entry span {
+    position: relative;
+    top: -2px;
+    padding: 0px 5px;
+    font-size: 11px;
+}
+.entry span:nth-child(2) {
+    border-right: 1px solid rgb(255,255,255);
+
+}
+
+.contact-icons {
+    border: 1px solid rgb(52,52,52);
+    border-radius: 12px;
+    padding: 0px 5px;
+}
+
+.contact-icons img {
+    display: inline;
+}
+
+.logo-img {
+    border: 2px solid transparent;
+    width: 908px;
+}
+
+header ul {
+    margin-top: 4px;
+}
+
+header li {
+    display: inline-block;
+    background: linear-gradient(to bottom, rgb(7,67,222), rgb(57,67,222));
+    border-radius: 10px;
+    font-size: 26px;
+}
+

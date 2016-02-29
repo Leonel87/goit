@@ -87,10 +87,9 @@ header li a:hover {
 }
 .main {
 	width: 564px;
-	height: 614px;
 	position: absolute;
 	background-color: rgba(74, 72, 63, 0.6);
-	top: 50%;
+	top: 380px;
 	left: 50%;
 	margin-top: -282px;
 	margin-left: -307px;
@@ -113,7 +112,7 @@ form {
 	margin-top: 35px;
     margin-bottom: 35px;
 }
-.main .f-log button {
+.f-log button {
 	background: transparent;
     border: none;
 }
@@ -123,15 +122,15 @@ form {
 .line-wrap span {
     display: block;
     float: left;
-    margin: 20px 4px 0;
+    margin: -7px 4px 0;
     color: #999999;
 }
 .line {
 	float: left;
     border-top: 2px solid #666666;
-    height: 1px;
+    border-bottom: 1px solid #000000;
     width: 122px;
-    margin-top: 28px;
+    margin-bottom: 20px;
 }
 .input-wrap {
     margin-top: 17px;
@@ -141,16 +140,16 @@ form {
 	background-color: #1b5288;
 	color: #ffffff;
 	-webkit-box-shadow: -1px 2px 31px 5px rgba(74,122,152,1);
--moz-box-shadow: -1px 2px 31px 5px rgba(74,122,152,1);
-box-shadow: -1px 2px 31px 5px rgba(74,122,152,1);
+    -moz-box-shadow: -1px 2px 31px 5px rgba(74,122,152,1);
+    box-shadow: -1px 2px 31px 5px rgba(74,122,152,1);
 }
 .input-wrap:hover {
     background-color: #1b5288;
-   -webkit-box-shadow: -1px 2px 31px 5px rgba(74,122,152,1);
--moz-box-shadow: -1px 2px 31px 5px rgba(74,122,152,1);
-box-shadow: -1px 2px 31px 5px rgba(74,122,152,1);
+    -webkit-box-shadow: -1px 2px 31px 5px rgba(74,122,152,1);
+    -moz-box-shadow: -1px 2px 31px 5px rgba(74,122,152,1);
+    box-shadow: -1px 2px 31px 5px rgba(74,122,152,1);
 }
-input {
+input[type="text"],[type="email"],[type="password"] {
     width: 100%;
     background-color: #101010;
     border-style: none;
@@ -158,14 +157,16 @@ input {
     font-size: 16px;
     color: #ffffff;
     padding: 8px 0px 9px 10px;
-    font-family: 'Tahoma', Tahoma;
+    font-family: Tahoma;
+}
+input:focus {
+   background-color: #1b5288;
 }
 .input-wrap-chackbox {
 	margin-top: 10px;
 	display: inline-block;
  	font-size: 15px;
 	margin-bottom: 10px;
-	padding-left: 7px;
 	color: #ffffff;
 }
 .create {
@@ -188,6 +189,10 @@ input {
     padding: 10px 15px 10px 15px;
     display: block;
     text-align: center;
+}
+.footer {
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
 .footer span{
 	display: block;
