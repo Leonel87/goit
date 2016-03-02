@@ -29,28 +29,28 @@ body, html {
 }
 .header-nav a:hover {
 	background-color: #3e3e3e;
+	border-right: 1px solid #838383;
+	border-left: 1px solid #838383;
+	
 }
 .header-nav {
-	display: block;
+	float: left;
 	background-color: #484747;
-	margin-bottom: 40px;
-	height: 40px;
+	width: 100%;
+	margin-bottom: 40px;	
 }
-nav a {
+.header-nav a {
+	padding: 9px 36px 13px 40px;
 	text-decoration: none;
 	color: #e3e3e3;
 	font-family:  Tahoma;
 	font-size: 15px;
-	padding: 0px;
 	display: block;
 	text-align: center;
 }
-nav li {
+.header-nav li {
 	float: left;
-	padding-top: 9px;
-	padding-bottom: 13px;
-	padding-left: 40px;
-	padding-right: 36px
+	display: block;
 }
 .sidebar {
 	float: left;
@@ -72,6 +72,10 @@ nav li {
 	padding-bottom: 15px;
 	text-decoration: none;
 	color: #2c2c2c;
+}
+.sidebar a:hover {
+	background-color: #f9f9f9;
+	padding-left: 45px;
 }
 ul {
 	list-style-type: none;

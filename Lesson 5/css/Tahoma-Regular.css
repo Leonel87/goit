@@ -1,0 +1,11 @@
+/** Created by TTF.in.ua **/
+@font-face {
+    font-family: 'Tahoma-Regular';
+    src: url('Tahoma-Regular.eot');
+    src: url('Tahoma-Regular.eot?#iefix') format('embedded-opentype'),
+         url('Tahoma-Regular.woff') format('woff'),
+         url('Tahoma-Regular.ttf') format('truetype'),
+         url('Tahoma-Regular.svg#Tahoma-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

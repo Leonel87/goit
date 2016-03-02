@@ -159,14 +159,14 @@ a p {
 	padding-right: 50px;
 }
 .sub-menu li {
-padding-left: 0px;
+	padding-left: 0px;
 	padding-right: 5px;
 }
 .hassub:hover .sub-menu {
 	display: block;
 }
 .content  {
-	width: 1000px;
+	width: 100%;
 	overflow: hidden;
 }
 .info {
@@ -174,12 +174,14 @@ padding-left: 0px;
 	float: left;
 	background: #edeef0;
 	padding-top: 5px;
+	display: block;
 	padding-bottom: 20000px;
 	margin-bottom: -20000px;
 }
 .content h2 {
 	text-align: center;
 	padding: 5px 0px;
+	display: block;
 }
 .info p {
 	text-align: center;
@@ -189,11 +191,15 @@ padding-left: 0px;
 }
 .content-centr {
 	width: 50%;
+	float: left;
+	padding-bottom: 20000px;
+	margin-bottom: -20000px;
 }
 .news {
+	display: block;
 	width: 25%;
 	float: right;
-	background: #edeef0;
+	background-color: #edeef0;
 }
 .news p {
 	text-align: center;
@@ -202,10 +208,12 @@ padding-left: 0px;
 	padding: 5px;
 }
 footer {
-	overflow: hidden;
+	position: absolute;
 	margin: 0 auto;
+	width: 100%
 }
-.footer-text p {
+footer p {
+	overflow: hidden;
 	text-align: center;
     color: #fff;
     font-size: 14px;
