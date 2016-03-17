@@ -12,19 +12,19 @@ body, html {
 	display: block;
 }
 .wrapper {
+	margin: 0px auto;
 	height: 100%;
 	display: table;
 	overflow: hidden;
 	table-layout: fixed;
-  	width: 100%;
-  	min-width: 1000px;
+  	width: 1000px;
   	background-color: #ffffff;
 }
 .w1 {
 	display: table-row;
 	height: 100%;
 }
-.conteiner {
+.container {
 	width: 966px;
 	padding: 0 15px;
 	margin: 0 auto;
@@ -105,12 +105,9 @@ ul {
 	
 }
 .footer {
-	/*width: 966px;
-	padding: 0;
-	margin: 0 auto;*/
 	background-color: #e1e1e1;
 	overflow: hidden;
-	margin-bottom: 60px;
+	margin-top: 60px;
 }
 footer a {
 	float: left;
