@@ -2,17 +2,17 @@
 	margin: 0;
 	padding: 0;
 }
-body {
+body,html {
 	font-family: "Tahoma";
 	background:  rgb(18,138,167);
 	margin: 0;
 	padding: 0;
 }
-/*.clearfix:after {
+.clearfix:after {
 	content: '';
 	clear: both;
 	display: block;
-}*/
+}
 .background {
 	margin-top: 25px;
 	background: linear-gradient(to bottom, rgb(65,198,211), rgb(18,138,167));
@@ -32,11 +32,10 @@ body {
 	position: relative;
 	height: 100%;
 	margin: 0 auto;
-	padding: 0;
 	background: #fff;
-	-moz-box-shadow: 0 0 10 4 rgba(30, 140, 152, 1);
+	/*-moz-box-shadow: 0 0 10 4 rgba(30, 140, 152, 1);
 	-webkit-box-shadow: 0 0 10 4 rgba(30, 140, 152, 1);
-	box-shadow: 0 0 10 4 rgba(30, 140, 152, 1);
+	box-shadow: 0 0 10 4 rgba(30, 140, 152, 1);*/
 	display: table;
 	table-layout: fixed;
 	min-width: 1000px;
