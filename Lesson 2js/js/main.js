@@ -1,82 +1,100 @@
 var data = {
-	'pageTitle' : 'Тест по программированию',
-	'question' : [{
-		'variantName' : '1. Вопрос №1',
-		'variantList' : [{
-			'title' : 'Вариант ответа №1' 
+	pageTitle : 'Тест по программированию',
+	question : [{
+			variantName : '1. Вопрос №1',
+			variantList : [
+				'Вариант ответа №1', 
+				
+				'Вариант ответа №2',
+		
+				'Вариант ответа №3'
+			],
+			inputName : ['1.1', '1.2', '1.3']	
 		},
-		{	
-			'title' : 'Вариант ответа №2'
-		},
-		{
-			'title' : 'Вариант ответа №3'
-		}]	
-	},
-	{ 
-		'variantName' : '2. Вопрос №2',	
-		'variantList' : [{
-			'title' : 'Вариант ответа №1' 
-		},
-		{	
-			'title' : 'Вариант ответа №2'
-		},
-		{
-			'title' : 'Вариант ответа №3'
-		}]	
-	},
-	{
-		'variantName' : '3. Вопрос №3',	
-		'variantList' : [{
-			'title' : 'Вариант ответа №1' 
-		},
-		{	
-			'title' : 'Вариант ответа №2'
+		{ 
+			variantName : '2. Вопрос №2',
+			variantList : [
+				'Вариант ответа №1', 
+				
+				'Вариант ответа №2',
+		
+				'Вариант ответа №3'
+			],
+			inputName : ['2.1', '2.2', '2.3']		
 		},
 		{
-			'title' : 'Вариант ответа №3'
-		}]
-	}]	
+			variantName : '3. Вопрос №3',
+			variantList : [
+				'Вариант ответа №1', 
+				
+				'Вариант ответа №2',
+		
+				'Вариант ответа №3'
+			],
+			inputName : ['3.1', '3.2', '3.3']	
+	}],
+	button : 'Проверить мои результаты'	
 }
 
 var page = {
 	buildPage: function() {
-		var wrapper = document.createElement('div');
-		wrapper.className = 'wrapper';
-		document.body.appendChild(wrapper);
+		var wrap = document.createElement('div');
+		wrap.classList.add ('wrapper');
+		var body = document.querySelector('body');
+		document.body.insertBefore(wrap, body.children[0]);
 
-		var titlePage = document.createElement('h2');
+		var form = document.createElement('form');
+		wrap.appendChild(form);
+
+		var titlePage = document.createElement('h1');
 		titlePage.innerHTML = data.pageTitle;
-		wrapper.appendChild(titlePage);
+		wrap.appendChild(titlePage);
 	},
 	buildList: function() {
 		for(var i=0; i<data.question.length; i++) {
-			var variantBox = document.createElement('div');
-			variantBox.className = 'variantBox';
-			document.querySelector('.wrapper').appendChild(variantBox);
-
-			var titleVariant = document.createElement('h3');
+			var wrapper = document.querySelector('.wrapper');
+			
+			var titleVariant = document.createElement('p');
 			titleVariant.innerHTML = data.question[i].variantName;
-			variantBox.appendChild(titleVariant);
+			wrapper.appendChild(titleVariant);
 
-			var listWrap = document.createElement('input');
-			variantBox.appendChild(listWrap);
+			var listWrap = document.createElement('ul');
+			wrapper.appendChild(listWrap);
 
 			for(var j = 0; j < data.question[i].variantList.length; j++) {
+				
 				var listItem = document.createElement('li');
 				listWrap.appendChild(listItem);
 
-				/*var listItem_link = document.createElement('a');
-				listItem_link.innerHTML = data.question[i].questionList[j].title;
-				listItem_link.setAttribute('href', data.question[i].questionList[j].href);
-				listItem.appendChild(listItem_link);*/
+				var label = document.createElement('label');
+				listItem.appendChild(label);
+
+				var input = document.createElement('input');
+				label.appendChild(input);
+				input.setAttribute('type', 'checkbox');
+				input.setAttribute('name', data.question[i].inputName[j]);
+
+				var respond = document.createElement('span');
+				respond.innerHTML = data.question[i].variantList[j];
+				label.appendChild(respond);				
 			}
 		}
 	},
+	buildButton : function() {
+		var wrapper = document.querySelector('.wrapper');
+		var btn = document.createElement('input');
+		wrapper.appendChild(btn);
+		btn.setAttribute('type', 'submit');
+		btn.classList.add('btn', 'btn-prime');
+		btn.value = data.button;
+},
 	pageInit: function() {
 		this.buildPage();
 		this.buildList();
-	}	
+		this.buildButton();
+}	
 }
+
 page.pageInit();
 
 console.log(data);

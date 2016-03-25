@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS3</title>
+	<style>
+		* {
+			outline: 0;
+		}
+		body {
+			background: #8349e3;
+		}
+		.timer {
+			font-size: 200px;
+			text-align: center;
+		}
+		.timerBtns {
+			text-align: center;
+		}
+		button {
+			font-size: 65px;
+			border-radius: 20px;
+			background: #0e9f1f;
+			padding: 0 20px;
+			cursor: pointer;
+		}
+		.split {
+			font-size: 20px;
+			text-align: center;
+			border: 5 solid #0e9f1f;
+			background: #db7512;
+			margin: 0 auto;
+			width: 570px;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="timer">
+		<span class="hours js-hours">00</span>
+		<span class="minutes js-minutes">00</span>
+		<span class="seconds js-seconds">00</span>
+		<span class="miliseconds js-miliseconds">000</span>
+	</div>
+	<div class="timerBtns">
+		<button class="js-start">Start</button>	
+		<button class="js-split">Split</button>
+		<button class="js-reset">Reset</button>
+	</div>
+	<div class="split"></div>
+
+
+	<script src="js/main.js"></script>
+</body>
+</html>
