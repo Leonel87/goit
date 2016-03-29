@@ -13,6 +13,7 @@
 				<!-- HEADER -->
 
 				<header class="clearfix">
+
 					<div class="phone">
 						<a class="number" href="tel:+380441234567">(044)123-45-6</a>
 						<a href="tel:+380445678910">(044)567-89-1</a>
@@ -26,9 +27,13 @@
 								<input type="password" name="password" placeholder="пароль">
 							</div>
 						</form>
-						<span><a href="#">вход</a></span>
-						<span><a href="#">регистрация</a></span>
-						<span><a href="#">забыли пароль?</a></span>
+						<div class="data">
+                            <form>
+                                <input type="submit" value="вход"></input>
+                            </form>
+                            <span><a href="#">регистрация</a></span>
+							<span class="lose-password"><a href="#">забыли пароль?</a></span>
+                        </div>
 					</div>
 					<div class="contact-icons">
 						<a href="#"><img src="img/home.png"></a>
@@ -62,7 +67,7 @@
 				
 				<!-- MAIN -->
 				
-				<div class="main clearfix">
+				<main class="main clearfix">
 
 					<!-- SIDEBAR -->
 
@@ -73,7 +78,7 @@
 						<div class="filterbox-title">
 							<span>ШИНЫ</span>
 						</div>	
-						<ul class="filterbox-li">
+						<ul class="filterbox">
 							<li><a href="#">Наименование 1</a></li>
 							<li><a href="#">Наименование 2</a></li>
 							<li><a href="#">Наименование 3</a></li>
@@ -82,7 +87,7 @@
 						<div class="filterbox-title">
 							<span>ДИСКИ</span>
 						</div>
-						<ul class="filterbox-li">
+						<ul class="filterbox">
 							<li><a href="#">Наименование 1</a></li>
 							<li><a href="#">Наименование 2</a></li>
 							<li><a href="#">Наименование 3</a></li>
@@ -91,7 +96,7 @@
 						<div class="filterbox-title">
 							<span>БОЛТЫ</span>
 						</div>
-						<ul class="filterbox-li">
+						<ul class="filterbox">
 							<li><a href="#">Наименование 1</a></li>
 							<li><a href="#">Наименование 2</a></li>
 							<li><a href="#">Наименование 3</a></li>
@@ -99,32 +104,51 @@
 						</ul>
 					</div>	
 					<div class="sidebar-right">	
-						<div class="sidebar-title">
+						<div class="sidebar-title-right">
 							<span>БРЕНДЫ:</span>
 						</div>
-						<div class="filterbox-title">
+						<div class="filterbox-title-right">
 							<span>ШИНЫ</span>
 						</div>	
 						<ul class="filterbox-brend">
-							<li><a href="#">Бренд 1</a></li>
-							<li><a href="#">Бренд 2</a></li>
-							<li><a href="#">Бренд 3</a></li>
+							<li>
+								<input type="checkbox" id="Brend1">
+								<label for="Brend1">Бренд 1</label>
+
+							</li>
+							<li>
+								<input type="checkbox" id="Brend2">
+								<label for="Brend2">Бренд 2</label>
+							</li>
+							<li>
+								<input type="checkbox" id="Brend3">
+								<label for="Brend3">Бренд 3</label>
+							</li>
 						</ul>
-						<div class="filterbox-title">
+						<div class="filterbox-title-right">
 							<span>ДИСКИ</span>
 						</div>
 						<ul class="filterbox-brend">
-							<li><a href="#">Бренд 1</a></li>
-							<li><a href="#">Бренд 2</a></li>
-							<li><a href="#">Бренд 3</a></li>
+							<li>
+								<input type="checkbox" id="Brend4">
+								<label for="Brend4">Бренд 1</label>
+							</li>
+							<li>
+								<input type="checkbox" id="Brend5">
+								<label for="Brend5">Бренд 2</label>
+							</li>
+							<li>
+								<input type="checkbox" id="Brend6">
+								<label for="Brend6">Бренд 3</label>
+							</li>
 						</ul>
 						<button>
 							<span>ВЫБРАТЬ</span>
 						</button>
 					</div>
 
-						<!-- CONTENT -->
-					
+					<!-- CONTENT -->
+
 					<div class="content clearfix">
 						<div class="item">
 							<a href="#">
@@ -142,13 +166,37 @@
                             </a>
                         	<span class="prices">115.00 грн.</span>
                         </div>
-                        <div>
-                           	<a href="#">
-                        		<strong>Hankook</strong>
-                            	<span class="item-text">K 708 155/65 R14</span>
-                            	<span class="iteming"><img src="images/hankook.jpg"></span>
+                        <div class="item">
+                            <a href="#">
+                                <strong>Hankook</strong>
+                                <span class="item-text">K 708 155/65 R14</span>
+                                <span class="itemimg"><img src="images/hankook.jpg"></span>
                             </a>
-							<span class="prices">393.00 грн.</span>
+                        	<span class="prices">393.00 грн.</span>
+                        </div>             	
+                        <div class="item">
+							<a href="#">
+                                <strong>Goodyear</strong>
+                                <span class="item-text">Ultra Grip Extreme</span>
+                                <span class="itemimg"><img src="images/	goodyear.jpg"></span>
+                           	</a>
+                           	<span class="prices">90.00 грн.</span>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <strong>Nokian</strong>
+                                <span class="item-text">Hakkapelita R</span>
+                                <span class="itemimg"><img src="images/nokian.jpg"></span>
+                            </a>
+                        	<span class="prices">115.00 грн.</span>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <strong>Hankook</strong>
+                                <span class="item-text">K 708 155/65 R14</span>
+                                <span class="itemimg"><img src="images/hankook.jpg"></span>
+                            </a>
+                        	<span class="prices">393.00 грн.</span>
                         </div>
                         <div class="item">
 							<a href="#">
@@ -166,42 +214,41 @@
                             </a>
                         	<span class="prices">115.00 грн.</span>
                         </div>
-                        <div>
-                           	<a href="#">
-                        		<strong>Hankook</strong>
-                            	<span class="item-text" >K 708 155/65 R14</span>
-                            	<span class="iteming"><img src="images/hankook.jpg"></span>
-                            </a>
-							<span class="prices">393.00 грн.</span>
-                        </div>
-                        <div class="item">
-							<a href="#">
-                                <strong>Goodyear</strong>
-                                <span class="item-text">Ultra Grip Extreme</span>
-                                <span class="itemimg"><img src="images/	goodyear.jpg"></span>
-                           	</a>
-                           	<span class="prices">90.00 грн.</span>
-                        </div>
                         <div class="item">
                             <a href="#">
-                                <strong>Nokian</strong>
-                                <span class="item-text">Hakkapelita R</span>
-                                <span class="itemimg"><img src="images/nokian.jpg"></span>
+                                <strong>Hankook</strong>
+                                <span class="item-text">K 708 155/65 R14</span>
+                                <span class="itemimg"><img src="images/hankook.jpg"></span>
                             </a>
-                        	<span class="prices">115.00 грн.</span>
-                        </div>
-                        <div>
-                           	<a href="#">
-                        		<strong>Hankook</strong>
-                            	<span class="item-text">K 708 155/65 R14</span>
-                            	<span class="iteming"><img src="images/hankook.jpg"></span>
-                            </a>
-							<span class="prices">393.00 грн.</span>
+                        	<span class="prices">393.00 грн.</span>
                         </div>
 					</div>	<!--content-->
-				</div>	<!--main-->
+				</main>	<!--main-->
+				<div class="tire-brands">
+					<ul>
+						<li><a href="#"><img src="images/Toyo-tires.jpg" alt="brand"></a></li>
+						<li><a href="#"><img src="images/Bridgestone.jpg" alt="brand"></a></li>
+						<li><a href="#"><img src="images/Continental.jpg" alt="brand"></a></li>
+						<li><a href="#"><img src="images/Cooper.jpg" alt="brand"></a></li>
+						<li><a href="#"><img src="images/Avon.jpg" alt="brand"></a></li>
+						<li><a href="#"><img src="images/Tire-Factory.jpg" alt="brand"></a></li>
+						<li><a href="#"><img src="images/Pirelli.jpg" alt="brand"></a></li>
+						<li><a href="#"><img src="images/Dunlop.jpg" alt="brand"></a></li>
+					</ul>
+				</div>	<!--tire-brands-->
 			</div>	<!--container-->
 		</div>	<!--w1-->
+		<footer class="footer">
+			<div class="container">				
+				<ul>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Статьи</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<span>Создание сайта © Global Vision</span>		
+			</div>
+		</footer>	
 	</div> <!--wrapper-->
 </body>
 </html>
