@@ -1,7 +1,7 @@
 var data = {
 	pageTitle : 'Тест по программированию',
 	question : [{
-			variantName : '1. Вопрос №1',
+			variantName : 'Вопрос №1',
 			variantList : [
 				'Вариант ответа №1', 
 				
@@ -12,7 +12,7 @@ var data = {
 			inputName : ['1.1', '1.2', '1.3']	
 		},
 		{ 
-			variantName : '2. Вопрос №2',
+			variantName : 'Вопрос №2',
 			variantList : [
 				'Вариант ответа №1', 
 				
@@ -23,7 +23,7 @@ var data = {
 			inputName : ['2.1', '2.2', '2.3']		
 		},
 		{
-			variantName : '3. Вопрос №3',
+			variantName : 'Вопрос №3',
 			variantList : [
 				'Вариант ответа №1', 
 				
@@ -38,17 +38,17 @@ var data = {
 
 var page = {
 	buildPage: function() {
-		var wrap = document.createElement('div');
-		wrap.classList.add ('wrapper');
+		var w1 = document.createElement('div');
+		w1.classList.add('wrapper');
 		var body = document.querySelector('body');
-		document.body.insertBefore(wrap, body.children[0]);
+		document.body.insertBefore(w1, body.children[0]);
 
 		var form = document.createElement('form');
-		wrap.appendChild(form);
+		w1.appendChild(form);
 
 		var titlePage = document.createElement('h1');
 		titlePage.innerHTML = data.pageTitle;
-		wrap.appendChild(titlePage);
+		w1.appendChild(titlePage);
 	},
 	buildList: function() {
 		for(var i=0; i<data.question.length; i++) {
