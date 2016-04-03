@@ -1,4 +1,3 @@
-(function() {
 var milisecondsDOM = document.querySelector('.js-miliseconds');
 var secondsDOM = document.querySelector('.js-seconds');
 var minutesDOM = document.querySelector('.js-minutes');
@@ -14,4 +13,3 @@ var btnReset = document.querySelector('.js-reset');
 	clear.innerHTML = 'Reset';
 
 	function startTimer() 
-}

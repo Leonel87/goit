@@ -1,0 +1,50 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #2f8510;
+	font-family: Tahoma, Arial, sans-serif;
+}
+.container {
+	margin-top: 50px;
+}
+form {
+	width: 600px;
+	margin: 0 auto;
+    padding: 20px;
+	border: 2px solid #ccd139;
+	border-radius: 10px;
+}
+.tooltips {
+	display: none;
+	border-radius: 10px;
+	padding: 5px 10px;
+	width: 240px;
+	background: wheat;
+}
+label {
+	color: white;
+	display: inline-block;
+    width: 100px;
+    margin-left: 20px;
+}
+input {
+    background-color: #222288;
+    border-style: none;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 5px 0px 5px 10px;
+    margin: 10px;
+}
+.button {
+    font-size: 16px;
+    cursor: pointer;
+	background-color: #4aa5d7;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+.button:hover {
+	color: #fff;
+}
