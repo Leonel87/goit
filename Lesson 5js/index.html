@@ -1,26 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Carousel</title>
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/jcarousel.basic.css">
-	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-	<script src="js/script.js"></script>
-	<script src="js/jcarousel.basic.js"></script>
+<meta charset="utf-8">
+<title>Basic carousel - jCarousel Examples</title>
+<!-- Shared assets -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- Example assets -->
+<link rel="stylesheet" type="text/css" href="css/jcarousel.basic.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+<script type="text/javascript" src="js/jcarousel.basic.js"></script>
 </head>
 <body>
-	<div class="wrapper">
-		<h1>Basic carousel</h1>
-		<ul class="carousel">
-			<li><img src="images/img1.jpg" alt=""></li>
-			<li><img src="images/img2.jpg" alt=""></li>
-			<li><img src="images/img3.jpg" alt=""></li>
-			<li><img src="images/img4.jpg" alt=""></li>
-			<li><img src="images/img5.jpg" alt=""></li>
-			<li><img src="images/img6.jpg" alt=""></li>
-		</ul>
-	
-	</div>
+    <div class="wrapper">
+            
+		<!--CAROUSEL-->
+
+        <h1>Donbass-arena stadium</h1>
+        <div class="jcarousel-wrapper">
+            <div class="jcarousel">
+                <ul>
+                   	<li><img src="images/shakhtar.jpg" width="600" height="400" alt=""></li>
+                    <li><img src="images/donbass-arena.jpg" width="600" height="400" alt=""></li>
+                    <li><img src="images/donbass-arena1.jpg" width="600" height="400" alt=""></li>
+                    <li><img src="images/donbass-arena2.jpg" width="600" height="400" alt=""></li>
+                    <li><img src="images/donbass-arena3.jpg" width="600" height="400" alt=""></li>
+                    <li><img src="images/donbass-arena4.jpg" width="600" height="400" alt=""></li>
+                    <li><img src="images/donbass-arena5.jpg" width="600" height="400" alt=""></li>
+                    <li><img src="images/donbass-arena6.jpg" width="600" height="400" alt=""></li>
+                </ul>
+            </div>
+            <p class="photo-credits">Photos by <a href="http://shakhtar.com">Aleksey Uvarov</a>
+            </p>
+            <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+            <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+            <p class="jcarousel-pagination"></p>
+        </div>
+
+        <!--SELECT-->
+		<nav>
+            <ul class="content clearfix">
+                <li><a href="#">Nav 1</a></li>
+                <li><a href="#">Nav 2</a></li>
+                <li class="dropdown">
+                    <a href="#">Nav 3</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Nav 3.1</a></li>
+                        <li><a href="#">Nav 3.2</a></li>
+                        <li><a href="#">Nav 3.3</a></li>
+                        <li class="dropdown">
+                            <a href="#">Nav 3.4</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Nav 3.4.1</a></li>
+                                <li class="dropdown">
+                                    <a href="#">Nav 3.4.2</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Nav 3.4.2.1</a></li>
+                                        <li><a href="#">Nav 3.4.2.2</a></li>
+                                        <li><a href="#">Nav 3.4.2.3</a></li>
+                                        <li><a href="#">Nav 3.4.2.4</a></li>
+                                        <li><a href="#">Nav 3.4.2.5</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Nav 3.4.3</a></li>
+                                <li><a href="#">Nav 3.4.4</a></li>
+                                <li><a href="#">Nav 3.4.5</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Nav 3.5</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Nav 4</a></li>
+                <li><a href="#">Nav 5</a></li>
+            </ul>    
+        </nav>
+		<div class="selectBox">
+            <div class="select">
+                <p>Custom select</p>
+                <select data-search="true">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                    <option value="4">Option 4</option>
+                    <option value="5">Option 5</option>
+                </select>
+            </div>
+        </div>
+        
+    </div>
 </body>
 </html>
+
+
