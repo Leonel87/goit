@@ -1,45 +1,60 @@
-$(function() {
-    $('.jcarousel').jcarousel({
-        $('.jcarousel-prev').click(function() {
-    $('.jcarousel').jcarousel('scroll', '-=1');
-});
+//jcarousel
 
-$('.jcarousel-next').click(function() {
-    $('.jcarousel').jcarousel('scroll', '+=1');
-});
+(function($) {
+    $(function() {
+        $('.jcarousel').jcarousel();
+
+        $('.jcarousel-control-prev')
+            .on('jcarouselcontrol:active', function() {
+                $(this).removeClass('inactive');
+            })
+            .on('jcarouselcontrol:inactive', function() {
+                $(this).addClass('inactive');
+            })
+            .jcarouselControl({
+                target: '-=1'
+            });
+
+        $('.jcarousel-control-next')
+            .on('jcarouselcontrol:active', function() {
+                $(this).removeClass('inactive');
+            })
+            .on('jcarouselcontrol:inactive', function() {
+                $(this).addClass('inactive');
+            })
+            .jcarouselControl({
+                target: '+=1'
+            });
+
+        $('.jcarousel-pagination')
+            .on('jcarouselpagination:active', 'a', function() {
+                $(this).addClass('active');
+            })
+            .on('jcarouselpagination:inactive', 'a', function() {
+                $(this).removeClass('active');
+            })
+            .jcarouselPagination();
+
+//slide down menu
+            $( '.dropdown' ).hover(
+                function(){
+                    $(this).children('.sub-menu').slideDown(200);
+                },
+                function(){
+                    $(this).children('.sub-menu').slideUp(200);
+                }
+            );
+
+//select
+             $('form').mfs({
+                 'enableScroll' : true,
+                 'maxHeight'    : 150
+             });
+        // $('form').mfs();
+
+//checkbox
+
+            
     });
-});
-
-
-
-
-
-
-
-
-
-//плагин для слайда дз 11-12
-(function($){
-  $(function(){
-    $('.js-slider').mySlider({
-      dots: 'ololol',
-      arrows:true,
-      newKey:12315,
-    });
-  });
 })(jQuery);
 
-
-
-(function($){
-  $.fn.myslider = function(option) {
-    var _default = {
-      autoSlide: false,
-      dots:false,
-      arrows: false
-    }
-    var _setting = $.extend(_default, option);
-    var _this = $(_this);
-
-  };
-})(jQuery);

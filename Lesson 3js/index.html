@@ -2,52 +2,30 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
 	<title>Lesson3-4</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
-	<style>
-		* {
-			outline: 0;
-		}
-		body {
-			background: #8349e3;
-		}
-		.timer {
-			font-size: 200px;
-			text-align: center;
-		}
-		.timerBtns {
-			text-align: center;
-		}
-		button {
-			font-size: 65px;
-			border-radius: 20px;
-			background: #0e9f1f;
-			padding: 0 20px;
-			cursor: pointer;
-		}
-		.split {
-			font-size: 20px;
-			text-align: center;
-			border: 5 solid #0e9f1f;
-			background: #db7512;
-			margin: 0 auto;
-			width: 570px;
-		}
-	</style>
-
 </head>
 <body>
 	<div class="wrapper">
-        <div class="container">
-            <span class="clock"></span>
-            <span class="start"></span>
-            <span class="split"></span>
-            <span class="reset"></span>
-            <div class="splitbox"></div>
-        </div>
-    </div>
-
+		<p class="timer-box">
+			<span class="js-hours">00</span>
+			<span> : </span>
+			<span class="js-minutes">00</span>
+			<span> : </span>
+			<span class="js-seconds">00</span>
+			<span> : </span>
+			<span class="js-miliseconds">000</span>
+		</p>
+		<div class="buttons">
+			<button class="js-start" value="">start</button>
+			<button class="js-split" value="">split</button>
+			<button class="js-reset" value="">reset</button>
+		</div>
+		<ol class="split-box"></ol>
+	</div>
 
 	<script src="js/main.js"></script>
 </body>
 </html>
+  
+
