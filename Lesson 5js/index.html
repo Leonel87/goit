@@ -2,26 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Basic carousel - jCarousel Examples</title>
+    <title>Lesson 9-10</title>
     <!-- Shared assets -->
     <link rel="stylesheet" href="css/jquery.mfs.css">
-    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <link rel="stylesheet" href="css/jcarousel.basic.css">
     <!-- Example assets -->
-    <link rel="stylesheet" type="text/css" href="css/jcarousel.basic.css">
-    <link rel="stylesheet" type="text/css" href="css/checkbox.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
-    <script type="text/javascript" src="js/checkbox.js"></script>
-    <script type="text/javascript" src="js/core.js"></script>
-    <script type="text/javascript" src="js/jcarousel.basic.js"></script>
-    <script type="text/javascript" src="js/jquery.mfs.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.jcarousel.min.js"></script>
+    <script src="js/jcarousel.basic.js"></script>
+    <script src="js/checkbox.js"></script>
+    <script src="js/jquery.mfs.min.js"></script>
 </head>
 <body>
     <div class="wrapper">
             
         <!--CAROUSEL-->
-
+        <div class="logo">
+        	<img src="images/logo.jpg">
+        </div>
         <h1>Donbass-arena stadium</h1>
         <div class="jcarousel-wrapper">
             <div class="jcarousel">
@@ -105,24 +105,42 @@
       
         <!-- checkbox -->
 
-        <fieldset>
-            <label for="check_1">Checkbox</label>
-            <input type="checkbox" name="check_1" id="check_1" value="on">
-        </fieldset>
-        <fieldset>
-            <label for="check_2">Checkbox</label>
-            <input type="checkbox" name="check_2" id="check_2" value="on">
-        </fieldset>
-        <fieldset>
-            <label for="check_3">Checkbox</label>
-            <input type="checkbox" name="check_3" id="check_3" value="on">
-        </fieldset>
-        <fieldset>
-            <label for="check_4">Checkbox</label>
-            <input type="checkbox" name="check_4" id="check_4" value="on">
-        </fieldset>
-    </div>
-    <script type="text/javascript" src="js/script.js"></script> 
+		
+			<div class="jqery_chek">
+				<h3>Выбирите рубрику (jQuery)</h3>
+				<label>Мероприятия<span class="niceCheck"><input type="checkbox" name="ch1" /></span><br></label>
+				<label>Конференции<span class="niceCheck"><input type="checkbox" checked="true" name="ch2"/></span><br></label>
+				<label>Музей и туры<span class="niceCheck"><input type="checkbox" name="ch3" disabled="true" /></span></label>
+			</div>
+			<div class="text">
+				<h3>Вместимость:</h3>
+				<ul>
+					<li>52 667 - общее количество мест для болельщиков.</li>
+					<li>290 мест для прессы, из них 152 места для журналистов и 138 мест для ТВ-комментаторов (всего 46 комментаторских кабинок).</li>
+					<li>196 мест для людей с ограниченными физическими возможностями и их сопровождающих (104 и 92 соответственно).</li>
+					<li>180 представителей СМИ могут комфортно разместиться в конференц-зале арены</li>
+					<li>1 830 - общее количество посадочных мест в ресторанах, барах и кафе стадиона.</li>
+					<li>Более 1 000 парковочных мест (из них 245 - подземная парковка)</li>
+					<li>Около 8 минут необходимо для эвакуации всех гостей стадиона.</li>
+				</ul>
+				<h3>Арена:</h3>
+				<ul>
+					<li>54 м - высота стадиона от уровня поля до его высшей точки.</li>
+					<li>93% трибун покрывает крыша, и лишь 3 800 сидений нижнего яруса остаются открытыми.</li>
+					<li>24 пункта первой медицинской помощи (18 стационарных и 6 мобильных групп)</li>
+					<li>53 фастфуда, фан-кафе, 4 «серебряных» бара, 3 ресторана («Бриллиантовый», «Платиновый», «Золотой»), медиакафе и лаунж-бар удовлетворят вкус любого гостя.</li>
+					<li>6 000 портов установлено на стадионе для одновременного подключения к сети.</li>
+					<li>550 горелок системы обогрева арены обладают мощностью в 22 МВт тепловой энергии.</li>
+				</ul>
+			</div>
+			<div class="css_chek">
+				<h3>Выбирите рубрику (CSS)</h3>
+				<input type="checkbox" id="ch1" class="check" /><label class="css_label" for="ch1">Мероприятия</label><br>
+				<input type="checkbox" id="ch2" class="check" checked="true" /><label class="css_label" for="ch2">Конференции</label><br>
+				<input type="checkbox" id="ch3" class="check" disabled="true" /><label class="css_label" for="ch3">Музей и туры</label></span>
+			</div>
+	</div>
+    <script src="js/script.js"></script> 
 </body>
 </html>
 
