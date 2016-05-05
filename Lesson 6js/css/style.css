@@ -1,3 +1,15 @@
+.clearfix {
+    content: "";
+    clear: both;
+    display: table;
+}
+.container {
+    /*height: 100%;*/
+    margin: 0 auto;
+    width: 765px;
+    padding: 15px;
+    background: url('../image/1.jpg') no-repeat;
+}
 .carousel-hider {
     width: 600px;
     overflow: hidden;
@@ -15,7 +27,9 @@
     float: left;
 }
 .carousel-element img {
-    max-width: 100px;
+    width: 100px;
+    height: 70px;
+    padding-top: 12px;
 }
 .carousel-arrow-left, .carousel-arrow-right {
     float: left;

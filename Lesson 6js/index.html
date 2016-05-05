@@ -10,38 +10,33 @@
 	<script src="js/script.js"></script>
 </head>
 <body>
+<div class="container clearfix">
 	<div class="carousel-arrow-left"><span>Влево</span></div>
 	<div class="carousel-hider">
-		<div class="carousel-list">
-			<div class="carousel-element"><img src="image/shakhtar.jpg"></div>
-			<div class="carousel-element"><img src="image/donbass-arena.jpg"></div>
-			<div class="carousel-element"><img src="image/donbass-arena1.jpg"></div>
-			<div class="carousel-element"><img src="image/donbass-arena2.jpg"></div>
-			<div class="carousel-element"><img src="image/donbass-arena3.jpg"></div>
-			<div class="carousel-element"><img src="image/donbass-arena4.jpg"></div>
-			<div class="carousel-element"><img src="image/donbass-arena5.jpg"></div>
-			<div class="carousel-element"><img src="image/donbass-arena6.jpg"></div>
-		</div>
+		<ul class="carousel-list">
+			<li class="carousel-element"><img src="image/shakhtar.jpg"></li>
+			<li class="carousel-element"><img src="image/donbass-arena.jpg"></li>
+			<li class="carousel-element"><img src="image/donbass-arena1.jpg"></li>
+			<li class="carousel-element"><img src="image/donbass-arena2.jpg"></li>
+			<li class="carousel-element"><img src="image/donbass-arena3.jpg"></li>
+			<li class="carousel-element"><img src="image/donbass-arena4.jpg"></li>
+			<li class="carousel-element"><img src="image/donbass-arena5.jpg"></li>
+			<li class="carousel-element"><img src="image/donbass-arena6.jpg"></li>
+		</ul>
 	</div>
 	<div class="carousel-arrow-right"><span>Вправо</span></div>
-	<script type="text/tamplate" id="task">
-		<div class="little">
-
-			<h1><%= data[0].title %></h1>
-			<img class="foto" src="<%= data[0].content %>" alt="foto">
-
-			<% for (var i = 1; i < data.length; i++) { %>
-     
-			<p><%= data[i].title %></p>
-			<ul>
-				<% for (var j = 0; j < data[i].content.length; j++) { %>
-    			<li><%= data[i].content[j] %></li>
-    			<% }; %>
-			</ul>
-			<hr>
-   
-			<% }; %>
+</div>
+	
+	<script type="text/tamplate" id="test">
+		<div class="container">
+			<% for (var i = 0; i < data.length; i++) {%>
+				<h1><%= data [i].title %></h1>
+				<span><%= data [i].firstName %></span>
+				<span><%= data [i].lastName %></span>
+				<p><%= data [i].content %></p>
+			<%	}; %>
 		</div>
 	</script>
+	
 </body>
 </html>
