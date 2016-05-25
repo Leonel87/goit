@@ -1,0 +1,18 @@
+.brands-box {
+	padding: 95px 0 100px;
+	color: $white;
+	max-width: 1160px;
+	margin: 0 auto;
+}
+.brands {
+	a {
+		padding-left: 45px;
+		
+	&:hover {
+		opacity: 0.7;
+	}
+	}
+	a:first-child {
+		padding-left: 0;
+	}	
+}

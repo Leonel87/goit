@@ -1,0 +1,43 @@
+.accordion {
+    padding: 0 5px 16px;
+	h4 {
+  		font-family: $font-base;
+		font-size: $fontSize-smaller;
+		color: $black;
+    	background: $white;
+    	padding: 10px 0 10px 0;
+    	margin:0 0 5px;
+    	border: 1px solid $lightgray;;
+    	&:hover{
+    		background: $gold;
+        	border: 1px solid transparent;
+        	color: $white;
+        	cursor: pointer;
+    	}
+	}
+	p {
+  		font-family: Arial, sans-serif;
+		font-size: $fontSize-smaller;
+		color: $gray;
+		line-height: 20px;
+    	padding: 20px 10px 10px 40px;
+    	display: none;
+	}
+	.active {
+    	color: $white;
+    	background: $gold;
+    	border: 1px solid transparent;
+    	.plus:after{
+    		content: "-";
+        	padding-right: 1px;
+    	}
+  	}
+}
+.plus {
+  	padding: 10px 15px 10px 15px;
+  	border-right: 1px solid $lightgray;
+  	margin-right: 10px;
+  	&:after{
+    	content: "+";
+  	}
+}

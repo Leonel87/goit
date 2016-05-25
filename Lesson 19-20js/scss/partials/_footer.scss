@@ -1,0 +1,29 @@
+.footer {
+	padding: 20px 0;
+	background: $silverblack;
+}
+.contacts {
+	li {
+		font-family: Arial, sans-serif;
+		font-size: $fontSize-smaller;
+		float: left;
+		margin-right: 30px;
+		img {
+			vertical-align: middle;
+		}
+		a {
+			padding-left: 10px;
+			color: $gray;
+			&:hover {
+				color: $blue;
+			}
+		}
+	}
+}
+.copyright {
+	float: right;
+	overflow: hidden;
+	font-family: Arial, sans-serif;
+	font-size: $fontSize-smaller;
+	color: $gray;
+}

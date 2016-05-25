@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'ubuntumedium';
+    src: url('../fonts/ubuntu-m-webfont.woff2') format('woff2'),
+         url('../fonts/ubuntu-m-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ubuntu_condensedregular';
+    src: url('../fonts/ubuntu-c-webfont.woff2') format('woff2'),
+         url('../fonts/ubuntu-c-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//FONT FAMILIES
+$font-base: 'ubuntumedium', Arial, sans-serif;
+$font-menu: 'ubuntu_condensedregular', Arial, sans-serif;
+
+//FONT SIZES
+$fontSize-smallest:     12px;
+$fontSize-smaller:      13px;
+$fontSize-small:        14px;
+$fontSize-base:         15px;
+$fontSize-large:        16px;
+$fontSize-larger:       20px;
+$fontSize-largest:      24px; 
+$fontSize-xlarg:        90px;
+
+//LINE HEIGHTS
+$lineHeight-tightest:   1.2;
+$lineHeight-tighter:    1.3;
+$lineHeight-tight:      1.4;
+$lineHeight-base:       1.5;
+$lineHeight-loose:      1.6;
+$lineHeight-looser:     1.7;

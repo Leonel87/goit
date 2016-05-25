@@ -1,83 +1,254 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Lesson 5</title>
-	<link rel="stylesheet" href="css/application.css">
-</head>	
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
+    
+    <title>19-20js</title>
+    <link rel="stylesheet" href="css/application.css">
+</head>
 <body>
 	<div class="wrapper">
-		<div class="conteiner">
-		
-		<!-- HEADER -->
-
+		<div class="w1">
 			<header>
-				<div class="header-nav">
-					<ul>
-  						<li><a href="#">Meu YouBike</a></li>
-  						<li><a href="#">Vender</a></li>
-  						<li><a href="#">Forum</a></li>
-  						<li><a href="#">Contato</a></li>
-  						<li><a href="#">Ajuda</a></li>
-  						<li><a href="#"><img src="img/inventicon.png"> Minhas Ofertas</a></li>
- 					</ul>
-					 <p>
- 					 	Ola! <a href="#">Entrar</a> ou <a href="#">Cadastre-se</a>
- 					</p>
- 				</div>	
-			</header>
-
-				<!-- CONTENT -->
-
-			<div class="content cleargix">
-				<div class="main">
-					<div class="box-text">
-						<p>Cadastre-se</p>
+				<div class="container clearfix">
+					<div class="header-logo">
+						<a class="logo" href="#"><img src="images/logo.png" alt="logo"></a>
+						<div class="social">
+							<a class="socialIcons__icon socialIcons__icon--fb" href="http://www.facebook.com"></a>
+							<a class="socialIcons__icon socialIcons__icon--twitter" href="http://www.twitter.com"></a>
+							<a class="socialIcons__icon socialIcons__icon--rss" href="http://www.rss.com"></a>
+							<a class="socialIcons__icon socialIcons__icon--linkedin" href="http://www.linkedin.com"></a>
+							<a class="socialIcons__icon socialIcons__icon--skype" href="http://www.skype.com"></a>
+						</div>
 					</div>
-					<form action="#" method="POST">
-						<div class="f-log">
-							<button>
-								<img src="img/facebook.png">
-							</button>
+					<div class="header-menu clearfix">
+						<ul class="menu">
+							<li class="active"><a href="#">HOME</a></li>
+							<li><a href="#">FEATURES</a></li>
+							<li><a href="#">SERVICES</a></li>
+							<li><a href="#">NEWS</a></li>
+							<li><a href="#">SHOP</a></li>
+						</ul>
+						<form>
+							<input type="search" placeholder="Search...">
+							<input type="submit" value="&#128269;"> 
+						</form>
+					</div>
+				    <div class="js-slider">
+				    	<div class="js-carousel">
+							<ul>
+								<li><img src="img/banner-1.jpg" width="1160" height="470" alt=""></li>
+					        	<li><img src="img/banner-2.jpg" width="1160" height="470" alt=""></li>
+					        	<li><img src="img/banner-3.jpg" width="1160" height="470" alt=""></li>
+							</ul>
+				    	</div>
+						<div class="jcarousel-pagination"></div>
+					</div> 
+				</div> <!-- container -->
+			</header>
+			<div class="content-info clearfix">
+				<div class="container">
+					<div class="blok-info">
+						<div class="number">
+							<span>01</span>
 						</div>
-						<div class="line-wrap clearfix">
-							<div class="line left-left"></div>
-								<span>OU</span>
-							<div class="line right-right"></div>
+						<div class="box">
+							<div class="icon-box">
+								<img src="images/title-01.png" alt="setting-icon">	
+							</div>
+							<div class="text-box">
+								<span class="title">Power Inside</span>
+								<p class="info">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique</p>
+							</div>
+							<div class="link-more">
+								<a href="#"><span>Read More&#8195;&#8594;</span></a>	
+							</div>
+						</div> 
+					</div>
+					<div class="blok-info">
+						<div class="number">
+							<span>02</span>
 						</div>
-						<div class="input-wrap">
-							<input type="text" placeholder="First Name">
+						<div class="box">
+							<div class="icon-box">
+								<img src="images/title-02.png" alt="setting-icon">	
+							</div>
+							<div class="text-box">
+								<span class="title">New Technologies</span>
+								<p class="info">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique</p>
+							</div>	
+							<div class="link-more">
+								<a href="#"><span>Read More&#8195;&#8594;</span></a>	
+							</div>
 						</div>
-						<div class="input-wrap">
-							<input type="text" placeholder="Last Name">
+					</div>
+					<div class="blok-info">
+						<div class="number">
+							<span>03</span>
 						</div>
-						<div class="input-wrap">
-							<input type="email" placeholder="Email Address">
+						<div class="box">
+							<div class="icon-box">
+								<img src="images/title-03.png" alt="setting-icon">	
+							</div>
+							<div class="text-box">
+								<span class="title">Fast Support</span>
+								<p class="info">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique</p>
+							</div>
+							<div class="link-more">
+								<a href="#"><span>Read More&#8195;&#8594;</span></a>	
+							</div>
 						</div>
-						<div class="input-wrap">
-							<input type="password" placeholder="Choose Password">
+					</div>
+				</div> <!-- container -->
+			</div> <!-- content-info -->
+			<div class="services-company clearfix">
+				<div class="container clearfix">
+					<p class="title-service">Our Services</p> 
+					<div class="service-block">
+						<div class="pict-block">
+							<img src="img/service-1.jpg" alt="" class="service__pict">
+							<a href="#" class="service__opacity"></a>	
 						</div>
-						<div class="input-wrap">
-							<input type="password" placeholder="Password Confirm">
+						<a class="rubric__title">Schedule Services</a>
+					</div>
+					<div class="service-block">
+						<div class="pict-block">
+							<img src="img/service-2.jpg" alt="" class="service__pict">
+							<a href="#" class="service__opacity"></a>	
 						</div>
-						<div class="input-wrap-chackbox">
-							<input type="checkbox" id="Send" value="send">
-							<label for="Send">Send me Youbike updates and tips</label>
+						<a class="rubric__title">Preventive Maintence</a>
+					</div>
+					<div class="service-block">
+						<div class="pict-block">
+							<img src="img/service-3.jpg" alt="" class="service__pict">
+							<a href="#" class="service__opacity"></a>	
 						</div>
-						<div class="create">
-							<button>
-								<span>Create my Account</span>
-							</button>
+						<a class="rubric__title">Tire &amp; Wheel Services</a>
+					</div>
+					<div class="service-block">
+						<div class="pict-block">
+							<img src="img/service-4.jpg" alt="" class="service__pict">
+							<a href="#" class="service__opacity"></a>	
 						</div>
-					</form>
-					<div class="footer clearfix">
-                    	<span>By clicking the button above, you agree to the Terms of Service</span>
-                    	<span>Xiew our Privacy Policy.</span>
-                	</div>
+						<a class="rubric__title">Repair Services</a>
+					</div>
+				</div> <!-- container -->
+			</div> <!-- services-company -->
+			<div class="news-box clearfix">
+				<div class="container">
+					<div class="content-box clearfix">
+						<h2>Latest News</h2>
+						<div class="news-post">
+							<div class="news-foto">
+								<span class="news-month">Jan</span>
+								<span class="news-day">23</span>
+								<img src="img/news-1.jpg" alt="" class="img-news">
+							</div>
+							<div class="news_review">
+								<a class="news_review-title" href="#"><span>Advanced Machinery Helps Improve Quality</span></a>
+								<p>by<a href="#"><span> cmsmasters</span></a> Comments (<a href="#"><span>6</span></a>)</p>
+								<p>Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+							</div>
+						</div> <!-- news-post -->
+						<div class="news-post">
+							<div class="news-foto">
+								<span class="news-month">Jan</span>
+								<span class="news-day">21</span>
+								<img src="img/news-2.jpg" alt="" class="img-news">
+							</div>
+							<div class="news_review">
+								<a class="news_review-title" href="#"><span>Powerful Techniques for Advanced Service</span></a>
+								<p>by<a href="#"><span> cmsmasters</span></a> Comments (<a href="#"><span>3</span></a>)</p>
+								<p>Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+							</div>
+						</div> <!-- news-post -->
+					</div> <!-- content-box -->
+					<div class="content-box clearfix">
+						<h2>Banners Place</h2>
+						<div class="accordion">
+							 <h4><span class="plus"></span>ACCORDION PANEL 1</h4>
+							<p>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur</p>
+							<h4><span class="plus"></span>ACCORDION PANEL 2</h4>
+							<p>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur</p>
+							<h4><span class="plus"></span>ACCORDION PANEL 3</h4>
+							<p>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur</p>
+							<h4><span class="plus"></span>ACCORDION PANEL 4</h4>
+							<p>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur</p>
+						</div> <!-- accordion -->
+					</div> <!-- content-box -->
+				</div> <!-- container -->
+			</div> <!-- news-box -->
+			<div class="brands-box">
+				<div class="container">
+					<div class="brands clearfix">
+						<a href="#"><img src="images/banner-1.png" alt="#"></a>
+						<a href="#"><img src="images/banner-2.png" alt="#"></a>
+						<a href="#"><img src="images/banner-3.png" alt="#"></a>
+						<a href="#"><img src="images/banner-4.png" alt="#"></a>
+						<a href="#"><img src="images/banner-5.png" alt="#"></a>
+						<a href="#"><img src="images/banner-6.png" alt="#"></a>
+					</div>
 				</div>
-			</div>	
-		</div>	
-	</div>
+			</div> <!-- brands-box -->
+		</div> <!-- w1 -->
+		<footer>
+			<div class="header-footer clearfix">
+				<div class="container">
+					<div class="column-footer">
+						<span>SOCIALS</span>
+						<ul class="item">
+							<li><a href="#">Facebook</a></li>
+							<li><a href="#">Flickr</a></li>
+							<li><a href="#">Twitter</a></li>
+							<li><a href="#">Vimeo</a></li>
+						</ul>
+					</div>
+					<div class="column-footer">
+						<span>LINKS</span>
+						<ul class="item">
+							<li><a href="#">How to Write a Blog</a></li>
+							<li><a href="#">Create a Blog in 4 Steps</a></li>
+							<li><a href="#">15 Tips to Increase Traffic</a></li>
+							<li><a href="#">20 Blog Post Ideas</a></li>
+						</ul>
+					</div>
+					<div class="column-footer">
+						<span>BLOGROLL</span>
+						<ul class="item">
+							<li><a href="#">Blogs Blog</a></li>
+							<li><a href="#">Roll Up Roll Up</a></li>
+							<li><a href="#">Blog Free</a></li>
+							<li><a href="#">Wordpress Blog</a></li>
+						</ul>
+					</div>
+					<div class="column-footer">
+						<span>ABOUT US</span>
+						<ul class="item">
+							<li><a href="#">Agriculture</a></li>
+							<li><a href="#">Harvest</a></li>
+							<li><a href="#">Company news</a></li>
+							<li><a href="#">Investor relations</a></li>
+						</ul>
+					</div>
+				</div> <!-- container -->
+			</div> <!-- header-footer -->
+			<div class="footer clearfix">
+				<div class="container clearfix">
+					<ul class="contacts ">
+						<li><img src="images/point-icon.png" alt=""><a href="#">BuildHomeLtd.  Street Name 123   23 45 Cityname</a></li>
+						<li><img src="images/phone-icon.png" alt=""><a href="tel:+123900123456">+123 900 123 456</a></li>
+						<li><img src="images/email-icon.png" alt=""><a href="mailto:info@buildhome.web">info@buildhome.web</a></li>
+					</ul>
+					<span class="copyright">&copy; 2014 Build Home</span>
+				</div>
+			</div>
+		</footer>
+	</div> <!-- wrapper -->
+	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="js/custom/script.js"></script>
 </body>
 </html>
-

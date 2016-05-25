@@ -1,0 +1,57 @@
+.services-company {
+	background: $dimgray;
+	padding: 48px 0 67px;
+} 
+.title-service {
+	font-family: $font-base;
+	font-size: $fontSize-largest;
+	color: $white;
+	margin: 0;
+	padding-bottom: 55px;
+}
+.service-block {
+ 	display: inline-block;
+ 	padding-right: 35px;
+ 	&:last-child {
+		padding-right: 0;
+	}
+ 	&:hover {
+  		.service__opacity {
+   		top: 0;
+  	}
+  		.rubric__title {
+   			color: $gold;
+   		}
+ 	}
+}
+.pict-block {
+ 	position: relative;
+ 	height: 260px;
+ 	width: 260px;
+ 	text-align: center;
+ 	overflow: hidden;
+} 
+.service__opacity {
+ 	display: block;
+   	position: absolute;
+ 	left: 0px;
+ 	top: 100%;
+  	height: 100%;
+ 	width: 100%;
+ 	color: $white;
+ 	font-size: $fontSize-largest;
+ 	font-weight: 100;
+ 	font-family: $font-base; 
+ 	background: $blue url(../images/plas.png) no-repeat 50% 50%;
+ 	opacity: 0.9;
+ 	z-index: 1;
+ 	transition: all 0.5s cubic-bezier(0.4, 0, 1, 1) 0s;
+}
+.rubric__title {
+ 	display: block;
+ 	padding-top: 35px;
+ 	text-align: center;
+ 	color: $white;
+ 	font-family: $font-base;
+ 	font-size: $fontSize-small;
+}

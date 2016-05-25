@@ -1,0 +1,38 @@
+.header-footer {
+	padding: 60px 0 80px;
+	background: $dimgray;
+}
+.column-footer {
+	display: inline-block;
+	padding-left: 40px;
+	&:first-child {
+		padding-left: 0;
+	}
+	span {
+		font-family: $font-base;
+		font-size: $fontSize-large;
+		color: $white;
+		margin-bottom: 33px;
+	}
+}
+.item {
+	width: 255px;
+	li {
+		font-family: Arial,sans-serif;
+		font-size: $fontSize-smaller;
+		padding: 12px 0 12px;
+		border-bottom: 2px solid $gray;
+		&:first-child {
+			margin-top: 33px;
+		}
+		&:last-child {
+			border: none;
+		}
+		a {
+			color: $gray;
+			&:hover {
+				color: $blue;
+			}
+		} 
+	}
+}

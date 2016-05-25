@@ -1,0 +1,79 @@
+.news-box {
+	background: $whitesmoke;
+	padding: 63px 0 82px;
+}
+.content-box {
+	float: left;
+	padding-left: 40px;
+	width: 560px;
+}
+h2 {
+	font-family: $font-base;
+	font-size: $fontSize-largest;
+	color: $black;
+	margin: 0;
+	padding-bottom: 48px;
+	padding-left: 2px;
+}
+.news-post {
+	position: relative;
+	padding-bottom: 30px;
+}
+.news-foto {
+	float: left;
+	padding-right: 35px;
+}
+.news-month {
+	font-family: $font-base;
+	font-size: $fontSize-base;
+	color: $white;
+	position: absolute;
+	top: 12px;
+	left: -20px;
+	width: 40px;
+	height: 40px;
+	background: $blue;
+	text-align: center;
+	padding-top: 10px;
+}
+.news-day {
+	font-family: $font-base;
+	font-size: $fontSize-base;
+	color: $white;
+	position: absolute;
+	top: 52px;
+	left: -20px;
+	width: 40px;
+	height: 40px;
+	background: $gold;
+	text-align: center;
+	padding-top: 10px;
+}
+.news_review {
+	/* width: 376px; */
+	padding-left: 35px;
+	margin: 0;
+	p {
+		font-family: Arial, sans-serif;
+		font-size: $fontSize-smaller;
+		color: $gray;
+		line-height: 20px;
+		margin: 0;
+		padding: 10px 0;
+	}
+	span {
+		font-family: Arial, sans-serif;
+		font-size: $fontSize-smaller;
+		color: $blue;
+	}
+}
+.news_review-title {
+	span {
+		font-family: $font-base;
+		font-size: $fontSize-large;
+		color: $black;
+		&:hover {
+			color: $blue;
+		}
+	}
+}
