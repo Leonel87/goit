@@ -63,10 +63,17 @@ header {
 .menu {
 	li {
 		float: left;
+/* <<<<<<< HEAD */
 	    border-right: 2px solid $black;	
 	}
 	a {
 	    display: block;
+/* ======= */
+	        border-right: 2px solid $black;	
+	}
+	a {
+		display: block;
+/* >>>>>>> 1258936740ed299be69bca208cd36b5a72341e98 */
 		padding: 22px 40px;
 		font-family: $font-menu;
 		font-size: $fontSize-small;
