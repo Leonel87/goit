@@ -63,11 +63,11 @@ header {
 .menu {
 	li {
 		float: left;
-	    display: inline-block;
-		padding: 22px 40px;
 	    border-right: 2px solid $black;	
 	}
 	a {
+	    display: block;
+		padding: 22px 40px;
 		font-family: $font-menu;
 		font-size: $fontSize-small;
 		color: $white;

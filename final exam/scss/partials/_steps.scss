@@ -1,0 +1,263 @@
+.steps {
+	display: block;
+	text-align: center;
+  /* padding: 38px 10px; */
+}
+.title {
+	font-family: $font-base;	
+	font-size: $fontSize-largest;	
+	color: $black;
+	padding-bottom: 15px;
+} 
+.slider{
+  margin: 7px;
+  /* position: relative; */
+}
+.slider__wrapp {
+  position: relative;
+
+}
+.slider__img{
+  display: block;
+  position: relative;
+  width: 300px;
+}
+/* .step, */
+.step{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.steps__slider,
+.steps__slider2 {
+	font-family: $font-1;   
+    font-size: $fontSize-smaller;
+    color: $white;
+    padding: 7px 14px 6px;
+    border: 1px solid $crimson;
+    border-radius: 40px;
+    background: $crimson;
+    display: block;
+}
+.steps__slider {
+    position: absolute;
+    top: 69px;
+    left: 20px;
+}
+.steps__slider2 {
+    position: absolute;
+    top: 99px;
+    left: 20px;
+}
+.step__title,
+.step2__title {
+    font-family: $font-base;
+    font-size: $fontSize-xlarg;
+    color: $white;
+    margin: 0;
+}
+.step__title {
+    position: absolute;
+    bottom: 68px;
+    left: 20px;
+    text-align: left;
+    padding-top: 20px;
+}
+.step2__title {
+    position: absolute;
+    bottom: 66px;
+    left: 20px;
+    text-align: left;
+    padding-top: 20px;
+} 
+.step__text,
+.step__text2{
+    font-family: $font-2;
+    font-size: $fontSize-small;
+    color: $light-gray;
+    text-align: left;
+    width: 260px;
+    margin: 0;
+}
+.step__text {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+.step__text2 {
+    position: absolute;
+    bottom: 10px;
+    left: 22px;
+}
+@media #{$medium-up} {
+.title {
+	  padding: 95px 0 35px;
+    margin: 0; 
+} 
+.slider {
+    width: 236px;
+    height: 400px;
+    display: block;
+    float: left;
+    position: relative;
+}
+.slider__img {
+    background-position: 0 0,center center;
+    background-size: cover; 
+    width: 236px;
+    height: 400px;
+    overflow: hidden;
+}
+button.slick-next.slick-arrow {
+    display: block;
+    position: relative;
+    left:185px;
+    top: -337px;
+    z-index: 99;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+button.slick-next.slick-arrow:active {
+    opacity: 0.3;
+}
+button.slick-next.slick-arrow:before{
+    background: url(../images/ico-right-arrow.png);
+    position: absolute;
+    width: 30px;
+    height: 56px;
+    top: 352px;
+    left: 0;
+}
+button.slick-prev.slick-arrow {
+    display: block;
+    position: relative;
+    left: 23px;
+    z-index: 99;
+    top: 108px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+button.slick-prev.slick-arrow:active {
+    opacity: 0.3;
+}
+button.slick-prev.slick-arrow:before{
+    background: url(../images/ico-left-arrow.png);
+    position: absolute;
+    width: 30px;
+    height: 56px;
+    top: -41px;
+    left: 0;
+}
+.slick-prev:before {
+    content: '';
+}
+.slick-next:before {
+    content: '';
+}
+div.slick-list.draggable {
+    position: absolute;
+    top: 0;
+    width: 236px;
+}
+div.slick-slide.slick-current.slick-active {
+    width: 236px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+/* .step1, */
+.step{
+    top: 0;
+    left: 0;
+  /* width: 195px; */
+    height: 400px;
+}
+.slider__wrapp {
+    position: relative;
+}
+.steps__slider {
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    padding: 7px 14px 6px;
+}
+.steps__slider2 {
+    position: absolute;
+    top: 250px;
+    left: 20px;
+    padding: 7px 14px 6px;
+}
+.step__title {
+    position: absolute;
+    bottom: 100px;
+    left: 20px;
+}
+.step2__title {
+    position: absolute;
+    bottom: 80px;
+    left: 20px;
+} 
+.step__text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 195px;
+}
+.step__text2 {
+    position: absolute;
+    bottom: 20px;
+    left: 18px;
+    width: 195px;
+}
+}
+@media #{$large-up} {
+.slider {
+    width: 300px;
+    margin: 6px;
+}
+.slider__img  {
+    width: 300px;
+}
+div.slick-list.draggable {
+    width: 300px;
+}
+div.slick-slide {
+    width: 300px;
+}
+div.slick-slide.slick-current.slick-active {
+    width: 300px;
+}  
+button.slick-prev.slick-arrow:before {
+    top: 65px;
+}
+button.slick-next.slick-arrow:before{
+    top: 460px;
+    left: 60px;
+}
+.step__title  {
+    width: 165px;
+}
+.step {
+    margin: 0;
+    width: 300px;
+    top: 0;
+    left: 0;
+}
+.step1__img {
+    width: 70px;
+    height: 20px;
+    position: absolute;
+    top: 208px;
+}
+.step__text {
+    width: 260px;
+}
+.step2__img {
+    top: 234px;
+}
+}

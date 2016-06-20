@@ -1,0 +1,51 @@
+.discover {
+	padding: 0 10px;
+	text-align: center;
+}
+.grid-item {
+  margin: 0 auto 10px;
+  width: 95%;
+  height: 120px;
+  border-radius: 5px;
+  overflow: hidden;
+  img {
+    display: block;
+  }
+  h2 {
+     position: absolute;
+     top: 30%;
+     width: 100%;
+     text-align: center;
+     color: $white;
+     font-size: $fontSize-largest;
+     font-family: $font-1;
+   }
+  @media#{$medium-up}{
+    width: 30%;
+    height: 310px;
+  }
+}
+.grid-sizer{
+  @media#{$medium-up}{
+    width: 30%;
+    height: 310px;
+  }
+}
+.grid-item:nth-child(5),
+.grid-item:nth-child(6) {
+  @media#{$medium-up}{
+    width: 61.5%;
+    height: 310px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
